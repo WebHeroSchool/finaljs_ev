@@ -66,6 +66,7 @@ card.forEach((item, n) => {
 	});
 });
 const element = document.createElement('div');
+const input = document.getElementsByName('levels');
 const click =() => {
 	mainmenu.classList.remove('mainmenu__display');
 	firstlevel.classList.add('firstlevel__display');
@@ -75,6 +76,9 @@ const click =() => {
 	thirdlevel.classList.add('thirdlevel__display');
 	thirdlevel.classList.remove('thirdlevel');
 	document.body.removeChild(element);
+	input.forEach((item, index) => {
+		input[index].removeAttribute('checked');
+	});
 	card.forEach((item, index) => {
 		card[index].classList.remove('card__flip');
 		cardBack[index].classList.add('card__back');
