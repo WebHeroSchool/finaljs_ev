@@ -77,7 +77,7 @@ const click =() => {
 	thirdlevel.classList.remove('thirdlevel');
 	document.body.removeChild(element);
 	input.forEach((item, index) => {
-		input[index].removeAttribute('checked');
+		item.checked = false;
 	});
 	card.forEach((item, index) => {
 		card[index].classList.remove('card__flip');
