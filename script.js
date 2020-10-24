@@ -7,31 +7,24 @@ const thirdlevel = document.getElementById('thirdlevel');
 const card = document.querySelectorAll('.card__img');
 const cardFront = document.querySelectorAll('.card__front');
 const cardBack = document.querySelectorAll('.card__back');
+
 button.addEventListener('click', event => {
 		if (level[0].checked) {
 			mainmenu.classList.toggle('mainmenu__display');
 			firstlevel.classList.remove('firstlevel__display');
-			firstlevel.classList.add('firstlevel');
 			playGame('.card__back_imgfirstlevel', 4, 2);
 		}
 		else if (level[1].checked) {
-			mainmenu.classList.remove('mainmenu');
-			mainmenu.classList.add('mainmenu__display');
-			firstlevel.classList.add('firstlevel__display');
+			mainmenu.classList.toggle('mainmenu__display');
 			firstlevel.classList.remove('firstlevel');
 			secondlevel.classList.remove('secondlevel__display');
-			secondlevel.classList.add('secondlevel');
 			playGame('.card__back_imgsecondlevel', 7, 5);
 		}
 		else if (level[2].checked) {
-			mainmenu.classList.remove('mainmenu');
-			mainmenu.classList.add('mainmenu__display');
-			firstlevel.classList.add('firstlevel__display');
+			mainmenu.classList.toggle('mainmenu__display');
 			firstlevel.classList.remove('firstlevel');
-			secondlevel.classList.add('secondlevel__display');
 			secondlevel.classList.remove('secondlevel');
 			thirdlevel.classList.remove('thirdlevel__display');
-			thirdlevel.classList.add('thirdlevel');
 			playGame('.card__back_imgthirdlevel', 11, 9)
 	}
 	});

@@ -90,7 +90,7 @@ body {
   flex-direction: column;
 }
 
-input[type="checkbox"] {
+input[type="radio"] {
   display: none;
 }
 
