@@ -16,14 +16,14 @@ button.addEventListener('click', event => {
 		}
 		else if (level[1].checked) {
 			mainmenu.classList.toggle('mainmenu__display');
-			firstlevel.classList.remove('firstlevel__table');
+			firstlevel.classList.remove('firstlevel-table');
 			secondlevel.classList.remove('secondlevel');
 			playGame('.card__back_imgsecondlevel', 7, 5);
 		}
 		else if (level[2].checked) {
 			mainmenu.classList.toggle('mainmenu__display');
-			firstlevel.classList.remove('firstlevel__table');
-			secondlevel.classList.remove('secondlevel__table');
+			firstlevel.classList.remove('firstlevel-table');
+			secondlevel.classList.remove('secondlevel-table');
 			thirdlevel.classList.remove('thirdlevel');
 			playGame('.card__back_imgthirdlevel', 11, 9)
 	}
@@ -63,11 +63,11 @@ const input = document.getElementsByName('levels');
 const click =() => {
 	mainmenu.classList.remove('mainmenu__display');
 	firstlevel.classList.add('firstlevel');
-	firstlevel.classList.remove('firstlevel__table');
+	firstlevel.classList.remove('firstlevel-table');
 	secondlevel.classList.add('secondlevel');
-	secondlevel.classList.remove('secondlevel__table');
+	secondlevel.classList.remove('secondlevel-table');
 	thirdlevel.classList.add('thirdlevel');
-	thirdlevel.classList.remove('thirdlevel__table');
+	thirdlevel.classList.remove('thirdlevel-table');
 	document.body.removeChild(element);
 	input.forEach((item, index) => {
 		item.checked = false;

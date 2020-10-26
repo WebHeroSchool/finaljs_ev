@@ -144,8 +144,8 @@ input:checked + label::before {
   bottom: 300px;
 }
 
-.firstlevel__table,
-.secondlevel__table {
+.firstlevel-table,
+.secondlevel-table {
   height: 100vh;
   width: 900px;
   margin: auto;
@@ -175,7 +175,7 @@ input:checked + label::before {
   margin-top: 30px;
 }
 
-.thirdlevel__table {
+.thirdlevel-table {
   position: relative;
   height: 100vh;
   margin: auto;
