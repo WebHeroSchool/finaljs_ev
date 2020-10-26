@@ -144,56 +144,49 @@ input:checked + label::before {
   bottom: 300px;
 }
 
-.firstlevel {
+.firstlevel__table,
+.secondlevel__table {
   height: 100vh;
   width: 900px;
   margin: auto;
 }
 
-.firstlevel__display {
+.firstlevel {
   display: none;
 }
 
 .firstlevel__img {
-  display: flex;
-  justify-content: center;
   align-items: center;
   margin-top: 200px;
 }
 
-.secondlevel {
-  position: relative;
-  height: 100vh;
-  margin: auto;
+.card {
+  display: flex;
+  justify-content: center;
+  flex-wrap: no-wrap;
 }
 
-.secondlevel__display {
+.secondlevel {
   display: none;
 }
 
 .secondlevel__img {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: no-wrap;
   margin-top: 30px;
 }
 
-.thirdlevel {
+.thirdlevel__table {
   position: relative;
   height: 100vh;
   margin: auto;
 }
 
-.thirdlevel__display {
+.thirdlevel {
   display: none;
 }
 
 .thirdlevel__img {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  flex-wrap: no-wrap;
   margin-top: 25px;
 }
 

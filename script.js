@@ -11,20 +11,20 @@ const cardBack = document.querySelectorAll('.card__back');
 button.addEventListener('click', event => {
 		if (level[0].checked) {
 			mainmenu.classList.toggle('mainmenu__display');
-			firstlevel.classList.remove('firstlevel__display');
+			firstlevel.classList.remove('firstlevel');
 			playGame('.card__back_imgfirstlevel', 4, 2);
 		}
 		else if (level[1].checked) {
 			mainmenu.classList.toggle('mainmenu__display');
-			firstlevel.classList.remove('firstlevel');
-			secondlevel.classList.remove('secondlevel__display');
+			firstlevel.classList.remove('firstlevel__table');
+			secondlevel.classList.remove('secondlevel');
 			playGame('.card__back_imgsecondlevel', 7, 5);
 		}
 		else if (level[2].checked) {
 			mainmenu.classList.toggle('mainmenu__display');
-			firstlevel.classList.remove('firstlevel');
-			secondlevel.classList.remove('secondlevel');
-			thirdlevel.classList.remove('thirdlevel__display');
+			firstlevel.classList.remove('firstlevel__table');
+			secondlevel.classList.remove('secondlevel__table');
+			thirdlevel.classList.remove('thirdlevel');
 			playGame('.card__back_imgthirdlevel', 11, 9)
 	}
 	});
@@ -62,12 +62,12 @@ const element = document.createElement('div');
 const input = document.getElementsByName('levels');
 const click =() => {
 	mainmenu.classList.remove('mainmenu__display');
-	firstlevel.classList.add('firstlevel__display');
-	firstlevel.classList.remove('firstlevel');
-	secondlevel.classList.add('secondlevel__display');
-	secondlevel.classList.remove('secondlevel');
-	thirdlevel.classList.add('thirdlevel__display');
-	thirdlevel.classList.remove('thirdlevel');
+	firstlevel.classList.add('firstlevel');
+	firstlevel.classList.remove('firstlevel__table');
+	secondlevel.classList.add('secondlevel');
+	secondlevel.classList.remove('secondlevel__table');
+	thirdlevel.classList.add('thirdlevel');
+	thirdlevel.classList.remove('thirdlevel__table');
 	document.body.removeChild(element);
 	input.forEach((item, index) => {
 		item.checked = false;
